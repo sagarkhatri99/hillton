@@ -10,48 +10,64 @@ export const metadata: Metadata = {
 
 const blogPosts = [
     {
-        title: "5 Simple Ways to Detox Your Body Naturally",
-        excerpt: "Discover gentle daily practices to support your body's natural detoxification processes without harsh cleanses.",
+        title: "What Is Naturopathy? A Simple Introduction",
+        excerpt: "Naturopathy is not about supplements or strict diets. It's about supporting your body's natural healing intelligence through elements like mud, water, and sun.",
         date: "October 15, 2023",
         author: "Dr. Sharma",
-        slug: "5-ways-to-detox",
+        slug: "what-is-naturopathy",
         category: "Naturopathy"
     },
     {
-        title: "Understanding Your Body Type (Dosha) in Ayurveda",
-        excerpt: "Are you Vata, Pitta, or Kapha? Learn the basics of Ayurvedic constitution and how to eat for your type.",
+        title: "Panchakarma Explained Without the Jargon",
+        excerpt: "Panchakarma sounds complex, but it's essentially a gentle detox process that clears toxins and resets your system using oil and heat therapies.",
         date: "October 22, 2023",
         author: "Dr. Gupta",
-        slug: "understanding-doshas",
+        slug: "panchakarma-basics",
         category: "Ayurveda"
     },
     {
-        title: "The Healing Power of Hydrotherapy",
-        excerpt: "Why water is one of the most powerful tools for pain relief and circulation, and how to use it at home.",
+        title: "Hydrotherapy for Pain Relief",
+        excerpt: "Why water is one of the most powerful tools for pain relief and circulation, and how therapeutic baths and packs can help joint issues.",
         date: "November 05, 2023",
         author: "Hillton Team",
-        slug: "healing-power-hydrotherapy",
+        slug: "hydrotherapy-pain-relief",
         category: "Hydrotherapy"
     },
     {
-        title: "Managing Stress in a Fast-Paced World",
-        excerpt: "Practical breathing techniques and lifestyle shifts to calm your nervous system instantly.",
+        title: "Yoga for Stress & Anxiety",
+        excerpt: "Simple yoga postures and breathing techniques that you can do daily to calm the nervous system and reduce anxiety naturally.",
         date: "November 12, 2023",
         author: "Dr. Sharma",
-        slug: "managing-stress",
+        slug: "yoga-for-stress",
+        category: "Wellness"
+    },
+    {
+        title: "Mud Therapy Benefits for Skin & Joints",
+        excerpt: "Discover how earth therapy can draw out toxins, cool the body, and improve skin health. A core practice in natural healing.",
+        date: "November 19, 2023",
+        author: "Hillton Team",
+        slug: "mud-therapy-benefits",
+        category: "Naturopathy"
+    },
+    {
+        title: "Daily Detox Rituals You Can Do at Home",
+        excerpt: "You don't need a retreat to detox. Small daily habits like tongue scraping and warm water can make a huge difference to your health.",
+        date: "November 26, 2023",
+        author: "Dr. Gupta",
+        slug: "daily-detox-rituals",
         category: "Wellness"
     }
 ];
 
 export default function BlogPage() {
     return (
-        <div className="flex flex-col min-h-screen font-sans text-stone-700 animate-fade-in bg-stone-50">
+        <div className="flex flex-col min-h-screen text-stone-700 animate-fade-in bg-stone-50 font-serif">
 
             {/* Hero */}
-            <section className="bg-teal-900 text-cream-50 py-20 md:py-28">
+            <section className="bg-primary text-cream-50 py-20 md:py-28">
                 <div className="container mx-auto px-4 text-center max-w-4xl">
-                    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Wellness Narratives</h1>
-                    <p className="text-xl opacity-90 leading-relaxed font-light">
+                    <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Wellness Narratives</h1>
+                    <p className="text-xl opacity-90 leading-relaxed font-light font-sans">
                         Insights, tips, and stories to support your journey towards natural health.
                     </p>
                 </div>
@@ -64,10 +80,10 @@ export default function BlogPage() {
                         {blogPosts.map((post, index) => (
                             <Link key={index} href={`/blog/${post.slug}`} className="card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 flex flex-col h-full group">
                                 <div className="aspect-video bg-stone-200 relative flex items-center justify-center">
-                                    <span className="text-stone-400 font-serif italic">[Image Placeholder]</span>
+                                    <span className="text-stone-400 font-sans italic">[Image Placeholder]</span>
                                 </div>
                                 <div className="p-8 flex flex-col flex-grow">
-                                    <div className="flex items-center gap-4 text-xs font-bold text-secondary uppercase tracking-wider mb-4">
+                                    <div className="flex items-center gap-4 text-xs font-bold text-secondary uppercase tracking-wider mb-4 font-sans">
                                         <span>{post.category}</span>
                                         <span className="text-stone-300">•</span>
                                         <div className="flex items-center gap-1 text-stone-400 font-medium normal-case">
@@ -75,15 +91,15 @@ export default function BlogPage() {
                                             {post.date}
                                         </div>
                                     </div>
-                                    <h2 className="font-serif text-2xl font-bold text-stone-800 mb-4 group-hover:text-primary transition">{post.title}</h2>
-                                    <p className="text-stone-600 mb-6 line-clamp-3 flex-grow leading-relaxed">{post.excerpt}</p>
+                                    <h2 className="font-sans text-2xl font-bold text-stone-800 mb-4 group-hover:text-primary transition">{post.title}</h2>
+                                    <p className="text-stone-600 mb-6 line-clamp-3 flex-grow leading-relaxed font-serif">{post.excerpt}</p>
 
                                     <div className="pt-6 border-t border-stone-100 flex items-center justify-between">
-                                        <div className="flex items-center gap-2 text-sm text-stone-500 font-medium">
+                                        <div className="flex items-center gap-2 text-sm text-stone-500 font-medium font-sans">
                                             <User size={16} />
                                             {post.author}
                                         </div>
-                                        <span className="text-primary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                        <span className="text-primary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform font-sans">
                                             Read Article <ArrowRight size={16} />
                                         </span>
                                     </div>
@@ -94,7 +110,7 @@ export default function BlogPage() {
 
                     {/* Pagination Placeholder */}
                     <div className="mt-16 text-center">
-                        <button className="btn-hover border border-stone-200 bg-white text-stone-600 hover:border-primary hover:text-primary px-8 py-3 rounded-full font-medium transition">
+                        <button className="btn-hover border border-stone-200 bg-white text-stone-600 hover:border-primary hover:text-primary px-8 py-3 rounded-full font-medium transition font-sans">
                             Load More Articles
                         </button>
                     </div>
@@ -104,15 +120,15 @@ export default function BlogPage() {
             {/* Newsletter */}
             <section className="py-20 bg-cream-50 border-t border-stone-100">
                 <div className="container mx-auto px-4 text-center max-w-2xl">
-                    <h2 className="font-serif text-3xl font-bold text-stone-800 mb-4">Join Our Community</h2>
-                    <p className="text-stone-600 mb-8">Get weekly wellness tips and exclusive offers delivered to your inbox.</p>
+                    <h2 className="font-sans text-3xl font-bold text-stone-800 mb-4">Join Our Community</h2>
+                    <p className="text-stone-600 mb-8 font-serif">Get weekly wellness tips and exclusive offers delivered to your inbox.</p>
                     <div className="flex flex-col md:flex-row gap-4">
                         <input
                             type="email"
                             placeholder="Your email address"
-                            className="flex-grow px-6 py-4 rounded-full border border-stone-200 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-white"
+                            className="flex-grow px-6 py-4 rounded-full border border-stone-200 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-white font-sans"
                         />
-                        <button className="btn-hover bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-full font-bold shadow-md hover:shadow-lg transition">
+                        <button className="btn-hover bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-full font-bold shadow-md hover:shadow-lg transition font-sans">
                             Subscribe
                         </button>
                     </div>

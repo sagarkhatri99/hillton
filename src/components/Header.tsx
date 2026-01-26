@@ -15,7 +15,7 @@ export default function Header() {
                 <div className="flex justify-between items-center h-20">
 
                     {/* Logo */}
-                    <Link href="/" className="font-serif text-primary font-bold tracking-tight">
+                    <Link href="/" className="font-sans text-primary font-bold tracking-tight">
                         <span className="sm:hidden text-2xl">Hillton</span>
                         <span className="hidden sm:inline text-lg md:text-xl lg:text-2xl leading-none">Hillton Prakritik Chikitsa Kendra</span>
                     </Link>
@@ -28,14 +28,14 @@ export default function Header() {
                         {/* Services Dropdown */}
                         <div className="relative group">
                             <button className="flex items-center gap-1 hover:text-primary transition py-4">
-                                Services <ChevronDown size={14} />
+                                Therapies <ChevronDown size={14} />
                             </button>
-                            <div className="absolute top-full left-0 w-64 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-stone-100">
-                                <Link href="/services" className="block px-4 py-2 hover:bg-cream-100 text-stone-700">All Services</Link>
+                            <div className="absolute top-full left-0 w-72 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-stone-100">
+                                <Link href="/services" className="block px-4 py-2 hover:bg-cream-100 text-stone-700">All Therapies</Link>
                                 <Link href="/services/naturopathy" className="block px-4 py-2 hover:bg-cream-100 text-stone-700">Naturopathy</Link>
-                                <Link href="/services/hydrotherapy" className="block px-4 py-2 hover:bg-cream-100 text-stone-700">Hydrotherapy</Link>
-                                <Link href="/services/ayurveda-panchakarma" className="block px-4 py-2 hover:bg-cream-100 text-stone-700">Ayurveda</Link>
-                                <Link href="/services/wellness-retreat" className="block px-4 py-2 hover:bg-cream-100 text-stone-700">Wellness</Link>
+                                <Link href="/services/ayurveda-panchakarma" className="block px-4 py-2 hover:bg-cream-100 text-stone-700">Ayurveda & Panchakarma</Link>
+                                <Link href="/services/wellness-retreat" className="block px-4 py-2 hover:bg-cream-100 text-stone-700">Wellness & Retreat</Link>
+                                <Link href="/services/physiotherapy-hydrotherapy" className="block px-4 py-2 hover:bg-cream-100 text-stone-700">Physiotherapy & Hydrotherapy</Link>
                             </div>
                         </div>
 
@@ -53,6 +53,7 @@ export default function Header() {
                             </div>
                         </div>
 
+                        <Link href="/#ipd-opd" className="hover:text-primary transition">IPD/OPD</Link>
                         <Link href="/blog" className="hover:text-primary transition">Blog</Link>
                         <Link href="/contact" className="hover:text-primary transition">Contact</Link>
                     </nav>
@@ -83,14 +84,14 @@ export default function Header() {
 
                         <div>
                             <button className="flex items-center justify-between w-full text-lg font-medium text-stone-800 mb-2 hover:text-primary transition" onClick={() => setServicesOpen(!servicesOpen)}>
-                                Services <ChevronDown size={16} className={`transform transition-transform duration-300 ${servicesOpen ? 'rotate-180' : ''}`} />
+                                Therapies <ChevronDown size={16} className={`transform transition-transform duration-300 ${servicesOpen ? 'rotate-180' : ''}`} />
                             </button>
                             <div className={`pl-4 space-y-3 border-l-2 border-stone-100 ml-1 overflow-hidden transition-[max-height] duration-300 ${servicesOpen ? 'max-h-96' : 'max-h-0'}`}>
-                                <Link href="/services" className="block text-stone-600 hover:text-primary" onClick={() => setIsOpen(false)}>All Services</Link>
+                                <Link href="/services" className="block text-stone-600 hover:text-primary" onClick={() => setIsOpen(false)}>All Therapies</Link>
                                 <Link href="/services/naturopathy" className="block text-stone-600 hover:text-primary" onClick={() => setIsOpen(false)}>Naturopathy</Link>
-                                <Link href="/services/hydrotherapy" className="block text-stone-600 hover:text-primary" onClick={() => setIsOpen(false)}>Hydrotherapy</Link>
-                                <Link href="/services/ayurveda-panchakarma" className="block text-stone-600 hover:text-primary" onClick={() => setIsOpen(false)}>Ayurveda</Link>
-                                <Link href="/services/wellness-retreat" className="block text-stone-600 hover:text-primary" onClick={() => setIsOpen(false)}>Wellness</Link>
+                                <Link href="/services/ayurveda-panchakarma" className="block text-stone-600 hover:text-primary" onClick={() => setIsOpen(false)}>Ayurveda & Panchakarma</Link>
+                                <Link href="/services/wellness-retreat" className="block text-stone-600 hover:text-primary" onClick={() => setIsOpen(false)}>Wellness & Retreat</Link>
+                                <Link href="/services/physiotherapy-hydrotherapy" className="block text-stone-600 hover:text-primary" onClick={() => setIsOpen(false)}>Physiotherapy & Hydrotherapy</Link>
                             </div>
                         </div>
 
@@ -106,6 +107,7 @@ export default function Header() {
                             </div>
                         </div>
 
+                        <Link href="/#ipd-opd" className="block text-lg font-medium text-stone-800 hover:text-primary transition" onClick={() => setIsOpen(false)}>IPD/OPD</Link>
                         <Link href="/blog" className="block text-lg font-medium text-stone-800 hover:text-primary transition" onClick={() => setIsOpen(false)}>Blog</Link>
                         <Link href="/contact" className="block text-lg font-medium text-stone-800 hover:text-primary transition" onClick={() => setIsOpen(false)}>Contact</Link>
 

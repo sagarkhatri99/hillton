@@ -1,25 +1,27 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lato } from "next/font/google";
+import { Poppins, Lora } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const playfair = Playfair_Display({
-    subsets: ["latin"],
-    variable: '--font-serif',
-    display: 'swap',
-});
-
-const lato = Lato({
-    weight: ['300', '400', '700'],
+const poppins = Poppins({
+    weight: ['400', '500', '600', '700'],
     subsets: ["latin"],
     variable: '--font-sans',
     display: 'swap',
 });
 
+const lora = Lora({
+    weight: ['400', '500', '600', '700'],
+    subsets: ["latin"],
+    variable: '--font-serif',
+    display: 'swap',
+});
+
 export const metadata: Metadata = {
-    title: "Hillton Prakritik Chikitsa Kendra | Natural Healing Center",
-    description: "Experience holistic wellness with Naturopathy, Ayurveda, and Hydrotherapy at Hillton Prakritik Chikitsa Kendra.",
+    title: "Hillton Prakritik Chikitsa Kendra | Natural Healing in Gurugram",
+    description: "Holistic wellness with Naturopathy, Ayurveda, Hydrotherapy & Yoga in Gurugram. Natural healing for chronic conditions.",
+    keywords: "naturopathy Gurugram, ayurveda, panchakarma, wellness retreat, natural healing, hydrotherapy, mud therapy",
 };
 
 export default function RootLayout({
@@ -28,8 +30,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
-            <body className="font-sans antialiased text-stone-800 bg-cream-50 min-h-screen flex flex-col">
+        <html lang="en" className={`${poppins.variable} ${lora.variable}`}>
+            <body className="font-serif antialiased text-stone-800 bg-cream-50 min-h-screen flex flex-col">
                 <Header />
                 <main className="flex-grow">
                     {children}

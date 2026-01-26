@@ -10,21 +10,29 @@ const config: Config = {
     extend: {
       colors: {
         cream: {
-          50: '#FDFBF7',
-          100: '#F7F3E8',
-          200: '#EFE6D0',
-          DEFAULT: '#FDFBF7',
+          50: '#FDFBF7', // Keep for very light bg
+          100: '#F5F5DC', // Soft Beige
+          200: '#E8E8C8', // Darker Beige
+          DEFAULT: '#F5F5DC',
         },
         primary: {
-          DEFAULT: '#0F766E', // teal-700
-          light: '#14B8A6', // teal-500
-          dark: '#0D9488', // teal-600
-          hover: '#115E59', // teal-800
+          DEFAULT: '#228B22', // Forest Green
+          light: '#4CAF50', // Lighter Green
+          dark: '#1B6E1B', // Darker Forest Green
+          hover: '#1B6E1B',
         },
         secondary: {
-          DEFAULT: '#854D0E', // yellow-800 (warm brown/bronze)
-          light: '#A16207', // yellow-700
+          DEFAULT: '#E2725B', // Warm Terracotta
+          light: '#F08C78',
         },
+        mint: {
+          DEFAULT: '#98FB98', // Mint Green
+          light: '#B0FCC0',
+        },
+        calmBlue: {
+          DEFAULT: '#ADD8E6', // Calming Blue
+          light: '#CBE7F0',
+        }
       },
       fontFamily: {
         serif: ['var(--font-serif)', 'serif'],
@@ -37,6 +45,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
 export default config;
