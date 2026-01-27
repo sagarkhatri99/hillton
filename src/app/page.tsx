@@ -33,35 +33,40 @@ const blogArticles = [
         excerpt: "Naturopathy is not about supplements or strict diets. It's about supporting your body's natural healing intelligence through elements like mud, water, and sun.",
         readTime: "4 min read",
         category: "Naturopathy",
-        image: "/images/new/blog-naturopathy.png"
+        image: "/images/new/blog-naturopathy.png",
+        alt: "Naturopathy Guide"
     },
     {
         title: "Panchakarma Basics",
         excerpt: "Panchakarma sounds complex, but it's essentially a gentle detox process that clears toxins and resets your system using oil and heat therapies.",
         readTime: "5 min read",
         category: "Ayurveda",
-        image: "/images/new/blog-panchakarma.png"
+        image: "/images/new/blog-panchakarma.png",
+        alt: "Panchakarma Basics"
     },
     {
         title: "Hydrotherapy for Pain Relief",
         excerpt: "Why water is one of the most powerful tools for pain relief and circulation, and how therapeutic baths and packs can help joint issues.",
         readTime: "3 min read",
         category: "Hydrotherapy",
-        image: "/images/new/blog-hydrotherapy.png"
+        image: "/images/new/blog-hydrotherapy.png",
+        alt: "Hydrotherapy Benefits"
     },
     {
         title: "Yoga for Stress",
         excerpt: "Simple yoga postures and breathing techniques that you can do daily to calm the nervous system and reduce anxiety naturally.",
         readTime: "4 min read",
         category: "Wellness",
-        image: "/images/new/blog-yoga.png"
+        image: "/images/new/blog-yoga.png",
+        alt: "Yoga for Stress Relief"
     },
     {
         title: "Mud Therapy Benefits",
         excerpt: "Discover how earth therapy can draw out toxins, cool the body, and improve skin health. A core practice in natural healing.",
         readTime: "3 min read",
         category: "Naturopathy",
-        image: "/images/new/blog-mud-therapy.png"
+        image: "/images/new/blog-mud-therapy.png",
+        alt: "Mud Therapy Benefits"
     },
     {
         title: "Daily Detox Rituals",
@@ -108,7 +113,14 @@ export default function Home() {
                     {/* Hero Image */}
                     <div className="hidden md:block md:w-2/5 lg:w-1/2 h-full pl-12 relative min-h-[400px]">
                         <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-cream-50/20 shadow-2xl">
-                            <Image src="/images/new/hero-mud-therapy.png" alt="Hillton Natural Healing Mud Therapy Gurugram" fill priority sizes="100vw" className="object-cover rounded-xl fade-in" />
+                            <Image
+                              src="/images/new/hero-mud-therapy.png"
+                              alt="Hillton Natural Mud Therapy Session"
+                              fill
+                              priority
+                              sizes="100vw"
+                              className="object-cover rounded-xl"
+                            />
                         </div>
                     </div>
                 </div>
@@ -236,7 +248,13 @@ export default function Home() {
                         {/* Card 1: Naturopathy */}
                         <div className="card-hover bg-white rounded-2xl p-8 transition hover:shadow-lg border border-stone-100 flex flex-col items-center text-center">
                             <div className="mb-6 relative w-full h-auto rounded-xl overflow-hidden">
-                                <Image src="/images/new/service-naturopathy.png" alt="Naturopathy Mud Therapy" width={450} height={560} className="w-full h-72 object-cover rounded-lg" />
+                                <Image
+                                  src="/images/new/service-naturopathy.png"
+                                  alt="Naturopathy Mud Therapy"
+                                  width={450}
+                                  height={560}
+                                  className="w-full h-72 object-cover rounded-lg"
+                                />
                             </div>
                             <div className="bg-mint/20 text-primary p-4 rounded-xl w-fit mb-6"><Leaf size={28} /></div>
                             <h3 className="font-sans text-2xl font-bold text-primary mb-4">Naturopathy</h3>
@@ -251,7 +269,13 @@ export default function Home() {
                         {/* Card 2: Ayurveda */}
                         <div className="card-hover bg-white rounded-2xl p-8 transition hover:shadow-lg border border-stone-100 flex flex-col items-center text-center">
                             <div className="mb-6 relative w-full h-auto rounded-xl overflow-hidden">
-                                <Image src="/images/new/service-ayurveda.png" alt="Ayurveda Panchakarma" width={450} height={560} className="w-full h-72 object-cover rounded-lg" />
+                                <Image
+                                  src="/images/new/service-ayurveda.png"
+                                  alt="Ayurveda Panchakarma"
+                                  width={450}
+                                  height={560}
+                                  className="w-full h-72 object-cover rounded-lg"
+                                />
                             </div>
                             <div className="bg-secondary/10 text-secondary p-4 rounded-xl w-fit mb-6"><Sun size={28} /></div>
                             <h3 className="font-sans text-2xl font-bold text-primary mb-4">Ayurveda & Panchakarma</h3>
@@ -266,7 +290,13 @@ export default function Home() {
                         {/* Card 3: Wellness */}
                         <div className="card-hover bg-white rounded-2xl p-8 transition hover:shadow-lg border border-stone-100 flex flex-col items-center text-center">
                             <div className="mb-6 relative w-full h-auto rounded-xl overflow-hidden">
-                                <Image src="/images/new/service-wellness.png" alt="Yoga Wellness Retreat" width={450} height={560} className="w-full h-72 object-cover rounded-lg" />
+                                <Image
+                                  src="/images/new/service-wellness.png"
+                                  alt="Yoga Wellness Retreat"
+                                  width={450}
+                                  height={560}
+                                  className="w-full h-72 object-cover rounded-lg"
+                                />
                             </div>
                             <div className="bg-calmBlue/20 text-primary-dark p-4 rounded-xl w-fit mb-6"><Brain size={28} /></div>
                             <h3 className="font-sans text-2xl font-bold text-primary mb-4">Wellness & Retreat</h3>
@@ -281,7 +311,13 @@ export default function Home() {
                         {/* Card 4: Physiotherapy & Hydrotherapy */}
                         <div className="card-hover bg-white rounded-2xl p-8 transition hover:shadow-lg border border-stone-100 flex flex-col items-center text-center">
                             <div className="mb-6 relative w-full h-auto rounded-xl overflow-hidden">
-                                <Image src="/images/new/service-physiotherapy.png" alt="Physiotherapy Hydrotherapy" width={450} height={560} className="w-full h-72 object-cover rounded-lg" />
+                                <Image
+                                  src="/images/new/service-physiotherapy.png"
+                                  alt="Physiotherapy Hydrotherapy"
+                                  width={450}
+                                  height={560}
+                                  className="w-full h-72 object-cover rounded-lg"
+                                />
                             </div>
                             <div className="bg-calmBlue text-primary-dark p-4 rounded-xl w-fit mb-6"><Droplets size={28} /></div>
                             <h3 className="font-sans text-2xl font-bold text-primary mb-4">Physiotherapy & Hydrotherapy</h3>
@@ -312,7 +348,12 @@ export default function Home() {
                             <p className="text-stone-600 text-lg leading-relaxed mb-8 font-serif">
                                 Here are common concerns we support:
                             </p>
-                            <Image src="/images/new/conditions-facade.png" alt="Hillton Gurugram Location" fill className="object-cover opacity-80" />
+                            <Image
+                              src="/images/new/conditions-facade.png"
+                              alt="Hillton Center in Gurugram"
+                              fill
+                              className="object-cover opacity-80"
+                            />
                             <Link href="/conditions" className="hidden lg:inline-flex bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-full font-medium transition items-center gap-2 font-sans absolute bottom-8 left-8 z-10">
                                 View All Conditions We Support <ArrowRight size={16} />
                             </Link>
@@ -456,7 +497,13 @@ export default function Home() {
                         {/* Testimonial 1 */}
                         <div className="bg-cream-50 p-8 rounded-2xl shadow-sm border border-stone-100 relative">
                             <div className="flex justify-center mb-6">
-                                <Image src="/images/new/testimonial-woman.png" alt="Client Testimonial" width={300} height={300} className="rounded-full" />
+                                <Image
+                                  src="/images/new/testimonial-woman.png"
+                                  alt="Guest sharing experience"
+                                  width={300}
+                                  height={300}
+                                  className="rounded-full object-cover"
+                                />
                             </div>
                             <Quote className="text-secondary/20 mb-4" size={40} />
                             <p className="text-stone-700 italic mb-6 leading-relaxed font-serif">
@@ -525,7 +572,7 @@ export default function Home() {
                         {blogArticles.map((article, index) => (
                             <div key={index} className="min-w-[300px] md:min-w-[350px] flex flex-col group cursor-pointer snap-start">
                                 <div className="aspect-video bg-stone-200 rounded-xl mb-4 overflow-hidden relative">
-                                    <Image src={article.image} alt={article.title} width={400} height={225} className="rounded" />
+                                    <Image src={article.image} alt={article.alt || article.title} width={400} height={225} className="w-full h-52 object-cover rounded" />
                                     <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition"></div>
                                 </div>
                                 <div className="flex items-center justify-between mb-2">

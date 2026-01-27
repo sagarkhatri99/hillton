@@ -7,7 +7,12 @@ export default function Footer() {
         <footer className="relative bg-primary-hover text-white pt-16 pb-8 overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
-                <Image src="/images/new/footer-garden.png" alt="Hillton Garden" fill className="object-cover opacity-70" />
+                <Image
+                  src="/images/new/footer-garden.png"
+                  alt="Hillton wellness garden"
+                  fill
+                  className="object-cover opacity-40 -z-10"
+                />
             </div>
             <div className="container mx-auto px-4 relative z-10">
                 {/* Top Grid: 4 Columns */}
