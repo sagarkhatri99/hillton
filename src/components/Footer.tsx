@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
-        <footer className="bg-primary-hover text-white pt-16 pb-8">
-            <div className="container mx-auto px-4">
+        <footer className="relative bg-primary-hover text-white pt-16 pb-8 overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
+                <Image src="/images/new/footer-garden.png" alt="Hillton Garden" fill className="object-cover opacity-70" />
+            </div>
+            <div className="container mx-auto px-4 relative z-10">
                 {/* Top Grid: 4 Columns */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
 

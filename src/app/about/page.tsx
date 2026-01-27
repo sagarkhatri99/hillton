@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import { ArrowRight, Leaf, Layers, User, CheckCircle, Clock, Stethoscope, ClipboardCheck, HeartHandshake } from 'lucide-react';
+import Image from "next/image";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -20,6 +21,9 @@ export default function About() {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center">
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-8">Our Story</h1>
+                        <div className="relative w-full h-[400px] mb-8 rounded-2xl overflow-hidden shadow-xl">
+                            <Image src="/images/new/about-reception.png" alt="Hillton Reception Gurugram" fill sizes="100vw" className="object-cover" />
+                        </div>
                         <div className="prose prose-lg md:prose-xl mx-auto text-stone-600 leading-relaxed">
                             <p className="mb-6">
                                 Hillton Prakritik Chikitsa Kendra was born from a simple observation: most people are tired of quick fixes and want deeper, more natural healing.
