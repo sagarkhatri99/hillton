@@ -304,7 +304,7 @@ export default function Home() {
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-16">
-                        <div className="lg:w-1/3">
+                        <div className="lg:w-1/3 relative">
                             <h2 className="font-sans text-3xl md:text-4xl text-primary font-bold mb-6">Who We Commonly Work With</h2>
                             <p className="text-stone-600 text-lg leading-relaxed mb-6 font-serif">
                                 People come to Hillton for many reasons. Some are managing long-standing health issues, others are looking to reset, detox or simply slow down and reconnect with themselves.
@@ -455,6 +455,9 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Testimonial 1 */}
                         <div className="bg-cream-50 p-8 rounded-2xl shadow-sm border border-stone-100 relative">
+                            <div className="flex justify-center mb-6">
+                                <Image src="/images/new/testimonial-woman.png" alt="Client Testimonial" width={300} height={300} className="rounded-full" />
+                            </div>
                             <Quote className="text-secondary/20 mb-4" size={40} />
                             <p className="text-stone-700 italic mb-6 leading-relaxed font-serif">
                                 "After 3 weeks of combined Naturopathy and Ayurveda sessions, I finally started sleeping deeply and waking up refreshed. The team was gentle and explained every step. I feel like my body is actually healing, not just getting 'managed'."
