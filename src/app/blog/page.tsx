@@ -2,6 +2,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Calendar, User } from 'lucide-react';
+import Image from "next/image";
 
 export const metadata: Metadata = {
     title: "Health & Wellness Blog | Natural Healing Tips | Hillton",
@@ -15,7 +16,8 @@ const blogPosts = [
         date: "October 15, 2023",
         author: "Dr. Sharma",
         slug: "what-is-naturopathy",
-        category: "Naturopathy"
+        category: "Naturopathy",
+        image: "/images/new/blog-naturopathy.png"
     },
     {
         title: "Panchakarma Explained Without the Jargon",
@@ -23,7 +25,8 @@ const blogPosts = [
         date: "October 22, 2023",
         author: "Dr. Gupta",
         slug: "panchakarma-basics",
-        category: "Ayurveda"
+        category: "Ayurveda",
+        image: "/images/new/blog-panchakarma.png"
     },
     {
         title: "Hydrotherapy for Pain Relief",
@@ -31,7 +34,8 @@ const blogPosts = [
         date: "November 05, 2023",
         author: "Hillton Team",
         slug: "hydrotherapy-pain-relief",
-        category: "Hydrotherapy"
+        category: "Hydrotherapy",
+        image: "/images/new/blog-hydrotherapy.png"
     },
     {
         title: "Yoga for Stress & Anxiety",
@@ -39,7 +43,8 @@ const blogPosts = [
         date: "November 12, 2023",
         author: "Dr. Sharma",
         slug: "yoga-for-stress",
-        category: "Wellness"
+        category: "Wellness",
+        image: "/images/new/blog-yoga.png"
     },
     {
         title: "Mud Therapy Benefits for Skin & Joints",
@@ -47,7 +52,8 @@ const blogPosts = [
         date: "November 19, 2023",
         author: "Hillton Team",
         slug: "mud-therapy-benefits",
-        category: "Naturopathy"
+        category: "Naturopathy",
+        image: "/images/new/blog-mud-therapy.png"
     },
     {
         title: "Daily Detox Rituals You Can Do at Home",
@@ -55,7 +61,8 @@ const blogPosts = [
         date: "November 26, 2023",
         author: "Dr. Gupta",
         slug: "daily-detox-rituals",
-        category: "Wellness"
+        category: "Wellness",
+        image: "/images/new/detox-ritual.png"
     }
 ];
 
@@ -79,8 +86,8 @@ export default function BlogPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {blogPosts.map((post, index) => (
                             <Link key={index} href={`/blog/${post.slug}`} className="card-hover bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 flex flex-col h-full group">
-                                <div className="aspect-video bg-stone-200 relative flex items-center justify-center">
-                                    <span className="text-stone-400 font-sans italic">[Image Placeholder]</span>
+                                <div className="aspect-video bg-stone-200 relative flex items-center justify-center overflow-hidden">
+                                    <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-105 transition duration-500" />
                                 </div>
                                 <div className="p-8 flex flex-col flex-grow">
                                     <div className="flex items-center gap-4 text-xs font-bold text-secondary uppercase tracking-wider mb-4 font-sans">

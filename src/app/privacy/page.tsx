@@ -9,7 +9,7 @@ export default function PrivacyPage() {
     return (
         <div className="min-h-screen bg-stone-50 font-sans text-stone-700">
             {/* Hero */}
-            <section className="bg-teal-900 text-cream-50 py-16 px-4 text-center">
+            <section className="bg-primary text-cream-50 py-16 px-4 text-center">
                 <div className="container mx-auto max-w-4xl">
                     <h1 className="font-serif text-4xl md:text-5xl font-bold">Privacy Policy</h1>
                     <p className="mt-4 opacity-80">Last Updated: December 2025</p>

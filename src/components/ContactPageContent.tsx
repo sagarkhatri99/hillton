@@ -65,7 +65,7 @@ export default function ContactPageContent() {
         <div className="min-h-screen bg-stone-50 font-sans text-stone-700 animate-fade-in">
 
             {/* Hero */}
-            <section className="bg-teal-900 text-cream-50 py-20 px-4 text-center">
+            <section className="bg-primary text-cream-50 py-20 px-4 text-center">
                 <div className="container mx-auto max-w-4xl">
                     <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Let's Talk About Your Health Goals</h1>
                     <p className="text-xl opacity-90 leading-relaxed max-w-2xl mx-auto font-light">
@@ -260,12 +260,12 @@ export default function ContactPageContent() {
                     <div className="space-y-8">
 
                         {/* Contact Methods */}
-                        <div className="bg-teal-900 text-cream-50 rounded-3xl p-8 shadow-md">
+                        <div className="bg-primary text-cream-50 rounded-3xl p-8 shadow-md">
                             <h2 className="font-serif text-2xl font-bold mb-6">Other Ways to Reach Us</h2>
 
                             <div className="space-y-8">
                                 <div className="flex gap-4">
-                                    <div className="w-10 h-10 bg-teal-800 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <div className="w-10 h-10 bg-primary-dark rounded-full flex items-center justify-center flex-shrink-0">
                                         <Phone size={20} className="text-secondary" />
                                     </div>
                                     <div>
@@ -277,7 +277,7 @@ export default function ContactPageContent() {
                                 </div>
 
                                 <div className="flex gap-4">
-                                    <div className="w-10 h-10 bg-teal-800 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <div className="w-10 h-10 bg-primary-dark rounded-full flex items-center justify-center flex-shrink-0">
                                         <MessageCircle size={20} className="text-secondary" />
                                     </div>
                                     <div>
@@ -288,7 +288,7 @@ export default function ContactPageContent() {
                                 </div>
 
                                 <div className="flex gap-4">
-                                    <div className="w-10 h-10 bg-teal-800 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <div className="w-10 h-10 bg-primary-dark rounded-full flex items-center justify-center flex-shrink-0">
                                         <Mail size={20} className="text-secondary" />
                                     </div>
                                     <div>
@@ -330,7 +330,7 @@ export default function ContactPageContent() {
                                 </div>
 
                                 <a
-                                    href="https://share.google/2XFGT6YP8aPFkoR0A"
+                                    href="https://maps.app.goo.gl/Qhy88sT3XcEHCnBa6"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="bg-stone-100 h-48 rounded-xl w-full flex items-center justify-center text-stone-500 hover:bg-stone-200 transition group"

@@ -29,8 +29,7 @@ export default function NaturopathyPage() {
                         "Reduces inflammation and swelling",
                         "Soothes sunburns, rashes and heat-related discomfort",
                         "Supports joint and muscle recovery"
-                    ],
-                    duration: "45–60 minutes"
+                    ]
                 },
                 {
                     title: "Acupuncture & Acupressure",
@@ -40,8 +39,7 @@ export default function NaturopathyPage() {
                         "Improves sleep quality",
                         "Supports digestion",
                         "Enhances overall energy and sense of wellbeing"
-                    ],
-                    duration: "30–45 minutes"
+                    ]
                 },
                 {
                     title: "Massage Therapies",
@@ -52,8 +50,7 @@ export default function NaturopathyPage() {
                         "Potli massage (warm herbal bolus)",
                         "Dry massage (stimulation and circulation)",
                         "Salt glow massage (exfoliation and renewal)"
-                    ],
-                    duration: "60–90 minutes"
+                    ]
                 },
                 {
                     title: "Diet & Lifestyle Guidance",
@@ -64,8 +61,7 @@ export default function NaturopathyPage() {
                         "Supports weight management",
                         "Reduces inflammation",
                         "Builds sustainable healthy habits"
-                    ],
-                    duration: "30–45 minutes (consultation)"
+                    ]
                 }
             ]}
 

@@ -23,11 +23,11 @@ export default function About() {
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-8">Our Story</h1>
                         <div className="relative w-full h-[400px] mb-8 rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                              src="/images/new/about-reception.png"
-                              alt="Reception at Hillton Prakritik Chikitsa Kendra"
-                              fill
-                              sizes="100vw"
-                              className="object-cover"
+                                src="/images/new/about-reception.png"
+                                alt="Reception at Hillton Prakritik Chikitsa Kendra"
+                                fill
+                                sizes="100vw"
+                                className="object-cover"
                             />
                         </div>
                         <div className="prose prose-lg md:prose-xl mx-auto text-stone-600 leading-relaxed">
@@ -283,17 +283,41 @@ export default function About() {
                         </div>
 
                         <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-                            <div className="aspect-square bg-white/5 rounded-2xl flex items-center justify-center border border-white/10">
-                                <span className="text-sm opacity-50">[Facility Room]</span>
+                            <div className="aspect-square bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 overflow-hidden relative">
+                                <Image
+                                    src="/images/new/facility-room.png"
+                                    alt="Hillton Facility Room"
+                                    fill
+                                    sizes="(max-width: 768px) 50vw, 25vw"
+                                    className="object-cover"
+                                />
                             </div>
-                            <div className="aspect-square bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 mt-8">
-                                <span className="text-sm opacity-50">[Meditation Space]</span>
+                            <div className="aspect-square bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 mt-8 overflow-hidden relative">
+                                <Image
+                                    src="/images/new/meditation-space.png"
+                                    alt="Meditation Space"
+                                    fill
+                                    sizes="(max-width: 768px) 50vw, 25vw"
+                                    className="object-cover"
+                                />
                             </div>
-                            <div className="aspect-square bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 -mt-8">
-                                <span className="text-sm opacity-50">[Treatment Area]</span>
+                            <div className="aspect-square bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 -mt-8 overflow-hidden relative">
+                                <Image
+                                    src="/images/new/Hydro-rrom.png"
+                                    alt="Hydrotherapy Room"
+                                    fill
+                                    sizes="(max-width: 768px) 50vw, 25vw"
+                                    className="object-cover"
+                                />
                             </div>
-                            <div className="aspect-square bg-white/5 rounded-2xl flex items-center justify-center border border-white/10">
-                                <span className="text-sm opacity-50">[Gardens]</span>
+                            <div className="aspect-square bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 overflow-hidden relative">
+                                <Image
+                                    src="/images/new/garden1.png"
+                                    alt="Hillton Gardens"
+                                    fill
+                                    sizes="(max-width: 768px) 50vw, 25vw"
+                                    className="object-cover"
+                                />
                             </div>
                         </div>
                     </div>

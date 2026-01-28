@@ -15,7 +15,7 @@ export default function Services() {
             {/* ---------------------------------------------------------------------------
          SECTION 1: PAGE INTRO
       --------------------------------------------------------------------------- */}
-            <section className="bg-teal-900 text-cream-50 py-20 md:py-28">
+            <section className="bg-primary text-cream-50 py-20 md:py-28">
                 <div className="container mx-auto px-4 text-center max-w-4xl">
                     <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-8">Our Services</h1>
                     <p className="text-xl opacity-90 leading-relaxed mb-6">

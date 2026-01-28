@@ -73,7 +73,7 @@ const blogArticles = [
         excerpt: "You don't need a retreat to detox. Small daily habits like tongue scraping and warm water can make a huge difference to your health.",
         readTime: "4 min read",
         category: "Wellness",
-        image: "/images/new/blog-mud-therapy.png"
+        image: "/images/new/detox-ritual.png"
     }
 ];
 
@@ -85,43 +85,42 @@ export default function Home() {
          SECTION 1: HERO
          Goal: Trust + Clarity + Booking CTA
       --------------------------------------------------------------------------- */}
-            <section className="relative bg-primary text-cream-50 py-24 md:py-32 lg:py-40 overflow-hidden">
-                {/* Abstract Texture/Image Placeholder */}
-                <div className="absolute inset-0 bg-primary-dark opacity-20 pattern-grid-lg"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-dark via-primary to-transparent"></div>
+            <section className="relative bg-primary text-cream-50 py-24 md:py-32 lg:py-48 overflow-hidden min-h-[600px] flex items-center">
+                {/* Full Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/images/new/homepagetop.png"
+                        alt="Hillton Natural Healing Center"
+                        fill
+                        priority
+                        className="object-cover object-center"
+                        quality={90}
+                    />
+                </div>
 
-                <div className="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center">
-                    <div className="w-full md:w-3/5 lg:w-1/2">
-                        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                {/* Gradient Overlay for Text Readability */}
+                <div className="absolute inset-0 z-10 bg-gradient-to-r from-primary-dark/95 via-primary/80 to-transparent"></div>
+
+                {/* Content */}
+                <div className="container mx-auto px-4 relative z-20">
+                    <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
+                        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-sm">
                             Natural Healing.<br />Complete Wellness.<br />One Center.
                         </h1>
-                        <p className="text-lg md:text-xl text-cream-100/90 mb-10 max-w-xl font-light leading-relaxed font-serif">
+                        <p className="text-lg md:text-xl text-cream-100/95 mb-10 max-w-xl font-light leading-relaxed font-serif drop-shadow-sm">
                             Hillton Prakritik Chikitsa Kendra brings together Naturopathy, Hydrotherapy, Ayurveda and Wellness therapies to help you heal naturally, detox deeply and restore balance – in a calm, caring environment.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 mb-8">
                             <Link href="/contact" className="btn-hover bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-full font-medium transition flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:cursor-pointer font-sans">
                                 Book a Consultation <ArrowRight size={18} />
                             </Link>
-                            <a href="tel:+919266423944" className="btn-hover border-2 border-cream-50/20 hover:bg-cream-50/10 text-cream-50 px-8 py-4 rounded-full font-medium transition flex items-center justify-center gap-2 font-sans">
+                            <a href="tel:+919266423944" className="btn-hover border-2 border-cream-50/20 hover:bg-cream-50/10 text-cream-50 px-8 py-4 rounded-full font-medium transition flex items-center justify-center gap-2 font-sans backdrop-blur-sm">
                                 <Phone size={18} /> Call / WhatsApp Us
                             </a>
                         </div>
-                        <p className="text-sm text-cream-200/80 font-medium tracking-wide font-sans">
+                        <p className="text-sm text-cream-200/90 font-medium tracking-wide font-sans">
                             Personalised treatment plans • Experienced practitioners • 100+ natural therapies
                         </p>
-                    </div>
-                    {/* Hero Image */}
-                    <div className="hidden md:block md:w-2/5 lg:w-1/2 h-full pl-12 relative min-h-[400px]">
-                        <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-cream-50/20 shadow-2xl">
-                            <Image
-                              src="/images/new/hero-mud-therapy.png"
-                              alt="Hillton Natural Mud Therapy Session"
-                              fill
-                              priority
-                              sizes="100vw"
-                              className="object-cover rounded-xl"
-                            />
-                        </div>
                     </div>
                 </div>
             </section>
@@ -249,11 +248,11 @@ export default function Home() {
                         <div className="card-hover bg-white rounded-2xl p-8 transition hover:shadow-lg border border-stone-100 flex flex-col items-center text-center">
                             <div className="mb-6 relative w-full h-auto rounded-xl overflow-hidden">
                                 <Image
-                                  src="/images/new/service-naturopathy.png"
-                                  alt="Naturopathy Mud Therapy"
-                                  width={450}
-                                  height={560}
-                                  className="w-full h-72 object-cover rounded-lg"
+                                    src="/images/new/service-naturopathy.png"
+                                    alt="Naturopathy Mud Therapy"
+                                    width={450}
+                                    height={560}
+                                    className="w-full h-72 object-cover rounded-lg"
                                 />
                             </div>
                             <div className="bg-mint/20 text-primary p-4 rounded-xl w-fit mb-6"><Leaf size={28} /></div>
@@ -270,11 +269,11 @@ export default function Home() {
                         <div className="card-hover bg-white rounded-2xl p-8 transition hover:shadow-lg border border-stone-100 flex flex-col items-center text-center">
                             <div className="mb-6 relative w-full h-auto rounded-xl overflow-hidden">
                                 <Image
-                                  src="/images/new/service-ayurveda.png"
-                                  alt="Ayurveda Panchakarma"
-                                  width={450}
-                                  height={560}
-                                  className="w-full h-72 object-cover rounded-lg"
+                                    src="/images/new/service-ayurveda.png"
+                                    alt="Ayurveda Panchakarma"
+                                    width={450}
+                                    height={560}
+                                    className="w-full h-72 object-cover rounded-lg"
                                 />
                             </div>
                             <div className="bg-secondary/10 text-secondary p-4 rounded-xl w-fit mb-6"><Sun size={28} /></div>
@@ -291,11 +290,11 @@ export default function Home() {
                         <div className="card-hover bg-white rounded-2xl p-8 transition hover:shadow-lg border border-stone-100 flex flex-col items-center text-center">
                             <div className="mb-6 relative w-full h-auto rounded-xl overflow-hidden">
                                 <Image
-                                  src="/images/new/service-wellness.png"
-                                  alt="Yoga Wellness Retreat"
-                                  width={450}
-                                  height={560}
-                                  className="w-full h-72 object-cover rounded-lg"
+                                    src="/images/new/service-wellness.png"
+                                    alt="Yoga Wellness Retreat"
+                                    width={450}
+                                    height={560}
+                                    className="w-full h-72 object-cover rounded-lg"
                                 />
                             </div>
                             <div className="bg-calmBlue/20 text-primary-dark p-4 rounded-xl w-fit mb-6"><Brain size={28} /></div>
@@ -312,11 +311,11 @@ export default function Home() {
                         <div className="card-hover bg-white rounded-2xl p-8 transition hover:shadow-lg border border-stone-100 flex flex-col items-center text-center">
                             <div className="mb-6 relative w-full h-auto rounded-xl overflow-hidden">
                                 <Image
-                                  src="/images/new/service-physiotherapy.png"
-                                  alt="Physiotherapy Hydrotherapy"
-                                  width={450}
-                                  height={560}
-                                  className="w-full h-72 object-cover rounded-lg"
+                                    src="/images/new/service-physiotherapy.png"
+                                    alt="Physiotherapy Hydrotherapy"
+                                    width={450}
+                                    height={560}
+                                    className="w-full h-72 object-cover rounded-lg"
                                 />
                             </div>
                             <div className="bg-calmBlue text-primary-dark p-4 rounded-xl w-fit mb-6"><Droplets size={28} /></div>
@@ -348,12 +347,7 @@ export default function Home() {
                             <p className="text-stone-600 text-lg leading-relaxed mb-8 font-serif">
                                 Here are common concerns we support:
                             </p>
-                            <Image
-                              src="/images/new/conditions-facade.png"
-                              alt="Hillton Center in Gurugram"
-                              fill
-                              className="object-cover opacity-80"
-                            />
+
                             <Link href="/conditions" className="hidden lg:inline-flex bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-full font-medium transition items-center gap-2 font-sans absolute bottom-8 left-8 z-10">
                                 View All Conditions We Support <ArrowRight size={16} />
                             </Link>
@@ -498,11 +492,11 @@ export default function Home() {
                         <div className="bg-cream-50 p-8 rounded-2xl shadow-sm border border-stone-100 relative">
                             <div className="flex justify-center mb-6">
                                 <Image
-                                  src="/images/new/testimonial-woman.png"
-                                  alt="Guest sharing experience"
-                                  width={300}
-                                  height={300}
-                                  className="rounded-full object-cover"
+                                    src="/images/new/priya.png"
+                                    alt="Priya M. sharing experience"
+                                    width={80}
+                                    height={80}
+                                    className="rounded-full object-cover w-20 h-20 border-2 border-white shadow-md"
                                 />
                             </div>
                             <Quote className="text-secondary/20 mb-4" size={40} />
@@ -517,6 +511,15 @@ export default function Home() {
 
                         {/* Testimonial 2 */}
                         <div className="bg-cream-50 p-8 rounded-2xl shadow-sm border border-stone-100 relative">
+                            <div className="flex justify-center mb-6">
+                                <Image
+                                    src="/images/new/rajesh.png"
+                                    alt="Rajesh K. sharing experience"
+                                    width={80}
+                                    height={80}
+                                    className="rounded-full object-cover w-20 h-20 border-2 border-white shadow-md"
+                                />
+                            </div>
                             <Quote className="text-secondary/20 mb-4" size={40} />
                             <p className="text-stone-700 italic mb-6 leading-relaxed font-serif">
                                 "I had chronic back pain from sitting long hours. Mud packs, hydrotherapy and guided yoga made a real difference within a few sessions. My posture is better and I'm not reaching for painkillers anymore."
@@ -529,12 +532,21 @@ export default function Home() {
 
                         {/* Testimonial 3 */}
                         <div className="bg-cream-50 p-8 rounded-2xl shadow-sm border border-stone-100 relative">
+                            <div className="flex justify-center mb-6">
+                                <Image
+                                    src="/images/new/neha.png"
+                                    alt="Neha sharing experience"
+                                    width={80}
+                                    height={80}
+                                    className="rounded-full object-cover w-20 h-20 border-2 border-white shadow-md"
+                                />
+                            </div>
                             <Quote className="text-secondary/20 mb-4" size={40} />
                             <p className="text-stone-700 italic mb-6 leading-relaxed font-serif">
                                 "Coming to Hillton felt like finally finding someone who gets that my skin issues are connected to my digestion and stress levels. The personalised plan addressed all of it. My skin is clearer and I feel more balanced overall."
                             </p>
                             <div className="mt-auto">
-                                <p className="font-bold text-primary font-sans">— Anjali S., Noida</p>
+                                <p className="font-bold text-primary font-sans">— Neha, Noida</p>
                                 <p className="text-xs text-stone-400 mt-2 font-medium tracking-wide font-sans">#Skin #Holistic #Ayurveda</p>
                             </div>
                         </div>

@@ -28,8 +28,7 @@ export default function WellnessPage() {
                         "Modifications for all bodies",
                         "Focus on breath and nervous system",
                         "Poses held longer for therapeutic benefit"
-                    ],
-                    duration: "45–60 minutes"
+                    ]
                 },
                 {
                     title: "Meditation & Breath Practices",
@@ -39,8 +38,7 @@ export default function WellnessPage() {
                         "Body Scan Meditation",
                         "Loving-Kindness Meditation",
                         "Breath Work (Pranayama) for calming or energizing"
-                    ],
-                    duration: "20–45 minutes"
+                    ]
                 },
                 {
                     title: "Sound Healing Therapy",
@@ -50,8 +48,7 @@ export default function WellnessPage() {
                         "Pain reduction",
                         "Improved sleep",
                         "Enhanced mood and emotional clearing"
-                    ],
-                    duration: "45–60 minutes"
+                    ]
                 },
                 {
                     title: "Deep Relaxation (Yoga Nidra)",
@@ -60,8 +57,7 @@ export default function WellnessPage() {
                         "Yoga Nidra (yogic sleep)",
                         "Conscious rest",
                         "Reduces deep-seated tension"
-                    ],
-                    duration: "30–60 minutes"
+                    ]
                 }
             ]}
 

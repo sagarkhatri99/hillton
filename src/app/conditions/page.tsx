@@ -35,7 +35,7 @@ export default function ConditionsHub() {
         <div className="flex flex-col min-h-screen font-sans text-stone-700 bg-stone-50 animate-fade-in">
 
             {/* Hero */}
-            <section className="bg-teal-900 text-cream-50 py-20 md:py-28">
+            <section className="bg-primary text-cream-50 py-20 md:py-28">
                 <div className="container mx-auto px-4 text-center max-w-4xl">
                     <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-8">Conditions We Support</h1>
                     <p className="text-xl opacity-90 leading-relaxed mb-6">

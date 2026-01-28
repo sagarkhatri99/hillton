@@ -8,10 +8,10 @@ export default function Footer() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
                 <Image
-                  src="/images/new/footer-garden.png"
-                  alt="Hillton wellness garden"
-                  fill
-                  className="object-cover opacity-40 -z-10"
+                    src="/images/new/footer-garden.png"
+                    alt="Hillton wellness garden"
+                    fill
+                    className="object-cover opacity-40 -z-10"
                 />
             </div>
             <div className="container mx-auto px-4 relative z-10">
@@ -62,7 +62,9 @@ export default function Footer() {
                         <div className="text-sm text-primary-100/90 space-y-3">
                             <div className="flex items-start gap-2">
                                 <MapPin size={18} className="mt-1 flex-shrink-0" />
-                                <p>Hillton Prakritik Chikitsa Kendra<br />3, Bharat Yatra Kendra Rd<br />Near BSF Road<br />Gurugram, Haryana 122102</p>
+                                <a href="https://maps.app.goo.gl/Qhy88sT3XcEHCnBa6" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                                    <p>Hillton Prakritik Chikitsa Kendra<br />3, Bharat Yatra Kendra Rd<br />Near BSF Road<br />Gurugram, Haryana 122102</p>
+                                </a>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Phone size={18} />
