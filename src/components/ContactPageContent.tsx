@@ -33,11 +33,33 @@ export default function ContactPageContent() {
         });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        console.log('Form Submitted:', formData);
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault();
+
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+          throw new Error("Failed to send message");
+        }
+
+        const data = await response.json();
+        console.log(data);
+
         setSubmitted(true);
+      } catch (error) {
+        console.error(error);
+        alert("Something went wrong. Please try again.");
+      }
     };
+
+    
 
     if (submitted) {
         return (
