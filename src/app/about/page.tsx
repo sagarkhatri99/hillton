@@ -312,7 +312,7 @@ export default function About() {
                   Naturopathy & Lifestyle Medicine
                 </p>
                 <p className="text-stone-600 text-sm leading-relaxed">
-                  [X] years of experience. Specializes in detoxification,
+                  3 years of experience. Specializes in detoxification,
                   digestive health, and stress-related conditions. Known for
                   patient explanations and sustainable guidance.
                 </p>
