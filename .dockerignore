@@ -1,0 +1,70 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Dependencies
+node_modules
+npm-debug.log
+npm-error.log
+yarn-error.log
+pnpm-debug.log
+lerna-debug.log
+
+# Next.js
+.next
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE & Editor
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Development
+.env
+.env.*.local
+
+# Build outputs
+dist
+build
+out
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Python
+.venv
+__pycache__
+*.py[cod]
+*$py.class
+
+# Testing
+coverage
+.nyc_output
+
+# Documentation & Images
+documentation
+*.md
+*.png
+*.jpg
+*.jpeg
+*.gif
+Gemini_Generated_Image*
+
+# Package manager lock files (optional - uncomment if needed for reproducibility)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Miscellaneous
+.turbo
+turbo.json
