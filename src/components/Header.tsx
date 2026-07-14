@@ -18,7 +18,9 @@ export default function Header() {
             href="/"
             className="font-sans text-primary font-bold tracking-tight"
           >
-            <span className="sm:hidden text-2xl">Hillton</span>
+            <span className="sm:hidden text-lg leading-none">
+              Hillton Prakritik Chikitsa Kendra
+            </span>
             <span className="hidden sm:inline text-lg md:text-xl lg:text-2xl leading-none">
               Hillton Prakritik Chikitsa Kendra
             </span>
